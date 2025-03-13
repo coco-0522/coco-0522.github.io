@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>家庭称谓学习卡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#FF6B6B',
+secondary: '#4ECDC4'
+},
+borderRadius: {
+'none': '0px',
+'sm': '2px',
+DEFAULT: '4px',
+'md': '8px',
+'lg': '12px',
+'xl': '16px',
+'2xl': '20px',
+'3xl': '24px',
+'full': '9999px',
+'button': '4px'
+}
+}
+}
+}
+</script>
+<style>
+body {
+font-family: 'Noto Sans SC', sans-serif;
+min-height: 1024px;
+background-color: #F7F9FC;
+}
+.word-card {
+transition: all 0.3s ease;
+}
+.word-card:hover {
+transform: translateY(-5px);
+}
+.word-card:active {
+transform: scale(0.98);
+}
+.pinyin {
+font-size: 14px;
+color: #666;
+}
+.example {
+font-size: 14px;
+color: #555;
+}
+.play-button {
+opacity: 1;
+transition: all 0.3s ease;
+background-color: rgba(255, 255, 255, 0.9);
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.word-card:hover .play-button {
+transform: scale(1.1);
+background-color: #FF6B6B;
+color: white;
+}
+</style>
+</head>
+<body>
+<div class="container mx-auto px-4 py-8">
+<h1 class="text-3xl font-bold text-center mb-8">家庭称谓学习卡</h1>
+<div class="grid grid-cols-4 gap-6">
+<!-- 爸爸 -->
+<div class="word-card bg-white rounded-xl shadow-lg p-4 cursor-pointer relative">
+<div class="h-48 rounded-lg overflow-hidden mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/42597def85ae70fb4f1746866d5d94da.jpg"
+class="w-full h-full object-cover" alt="爸爸">
+</div>
+<div class="text-center">
+<h2 class="text-2xl font-bold mb-1">爸爸</h2>
+<p class="pinyin mb-2">bàba</p>
+<p class="example">爸爸在看报纸。</p>
+</div>
+<div class="play-button absolute top-4 right-4">
+<i class="fas fa-volume-up text-primary text-xl w-5 h-5"></i>
+</div>
+</div>
+<!-- 妈妈 -->
+<div class="word-card bg-white rounded-xl shadow-lg p-4 cursor-pointer relative">
+<div class="h-48 rounded-lg overflow-hidden mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/d55908f77f5ba0de7d5cef482c16a046.jpg"
+class="w-full h-full object-cover" alt="妈妈">
+</div>
+<div class="text-center">
+<h2 class="text-2xl font-bold mb-1">妈妈</h2>
+<p class="pinyin mb-2">māma</p>
+<p class="example">妈妈在做饭。</p>
+</div>
+<div class="play-button absolute top-4 right-4">
+<i class="fas fa-volume-up text-primary text-xl w-5 h-5"></i>
+</div>
+</div>
+<!-- 哥哥 -->
+<div class="word-card bg-white rounded-xl shadow-lg p-4 cursor-pointer relative">
+<div class="h-48 rounded-lg overflow-hidden mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/a6478f0ceba9418c26a10d9ffa4ef353.jpg"
+class="w-full h-full object-cover" alt="哥哥">
+</div>
+<div class="text-center">
+<h2 class="text-2xl font-bold mb-1">哥哥</h2>
+<p class="pinyin mb-2">gēge</p>
+<p class="example">哥哥在打篮球。</p>
+</div>
+<div class="play-button absolute top-4 right-4">
+<i class="fas fa-volume-up text-primary text-xl w-5 h-5"></i>
+</div>
+</div>
+<!-- 姐姐 -->
+<div class="word-card bg-white rounded-xl shadow-lg p-4 cursor-pointer relative">
+<div class="h-48 rounded-lg overflow-hidden mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/088e2940969cb5e028f63ffb05bac11d.jpg"
+class="w-full h-full object-cover" alt="姐姐">
+</div>
+<div class="text-center">
+<h2 class="text-2xl font-bold mb-1">姐姐</h2>
+<p class="pinyin mb-2">jiějie</p>
+<p class="example">姐姐在弹钢琴。</p>
+</div>
+<div class="play-button absolute top-4 right-4">
+<i class="fas fa-volume-up text-primary text-xl w-5 h-5"></i>
+</div>
+</div>
+<!-- 弟弟 -->
+<div class="word-card bg-white rounded-xl shadow-lg p-4 cursor-pointer relative">
+<div class="h-48 rounded-lg overflow-hidden mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/cda1ea30330743511630d9ee65384599.jpg"
+class="w-full h-full object-cover" alt="弟弟">
+</div>
+<div class="text-center">
+<h2 class="text-2xl font-bold mb-1">弟弟</h2>
+<p class="pinyin mb-2">dìdi</p>
+<p class="example">弟弟在玩游戏。</p>
+</div>
+<div class="play-button absolute top-4 right-4">
+<i class="fas fa-volume-up text-primary text-xl w-5 h-5"></i>
+</div>
+</div>
+<!-- 妹妹 -->
+<div class="word-card bg-white rounded-xl shadow-lg p-4 cursor-pointer relative">
+<div class="h-48 rounded-lg overflow-hidden mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/7fdf50cf834aa94e52b9bc02d6ff2814.jpg"
+class="w-full h-full object-cover" alt="妹妹">
+</div>
+<div class="text-center">
+<h2 class="text-2xl font-bold mb-1">妹妹</h2>
+<p class="pinyin mb-2">mèimei</p>
+<p class="example">妹妹在画画。</p>
+</div>
+<div class="play-button absolute top-4 right-4">
+<i class="fas fa-volume-up text-primary text-xl w-5 h-5"></i>
+</div>
+</div>
+<!-- 爷爷 -->
+<div class="word-card bg-white rounded-xl shadow-lg p-4 cursor-pointer relative">
+<div class="h-48 rounded-lg overflow-hidden mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/47c4f16205e394c94ce7cf11849df86f.jpg"
+class="w-full h-full object-cover" alt="爷爷">
+</div>
+<div class="text-center">
+<h2 class="text-2xl font-bold mb-1">爷爷</h2>
+<p class="pinyin mb-2">yéye</p>
+<p class="example">爷爷在下棋。</p>
+</div>
+<div class="play-button absolute top-4 right-4">
+<i class="fas fa-volume-up text-primary text-xl w-5 h-5"></i>
+</div>
+</div>
+<!-- 奶奶 -->
+<div class="word-card bg-white rounded-xl shadow-lg p-4 cursor-pointer relative">
+<div class="h-48 rounded-lg overflow-hidden mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/5f937b8ec93ff3b3820036a1c86ea275.jpg"
+class="w-full h-full object-cover" alt="奶奶">
+</div>
+<div class="text-center">
+<h2 class="text-2xl font-bold mb-1">奶奶</h2>
+<p class="pinyin mb-2">nǎinai</p>
+<p class="example">奶奶在织毛衣。</p>
+</div>
+<div class="play-button absolute top-4 right-4">
+<i class="fas fa-volume-up text-primary text-xl w-5 h-5"></i>
+</div>
+</div>
+<!-- 外公 -->
+<div class="word-card bg-white rounded-xl shadow-lg p-4 cursor-pointer relative">
+<div class="h-48 rounded-lg overflow-hidden mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/5945c4e715f114fe3af3cc76d0afc34e.jpg"
+class="w-full h-full object-cover" alt="外公">
+</div>
+<div class="text-center">
+<h2 class="text-2xl font-bold mb-1">外公</h2>
+<p class="pinyin mb-2">wàigōng</p>
+<p class="example">外公在浇花。</p>
+</div>
+<div class="play-button absolute top-4 right-4">
+<i class="fas fa-volume-up text-primary text-xl w-5 h-5"></i>
+</div>
+</div>
+<!-- 外婆 -->
+<div class="word-card bg-white rounded-xl shadow-lg p-4 cursor-pointer relative">
+<div class="h-48 rounded-lg overflow-hidden mb-4">
+<img src="https://ai-public.mastergo.com/ai/img_res/1c3dedacae7c29992204a3cf5b19a862.jpg"
+class="w-full h-full object-cover" alt="外婆">
+</div>
+<div class="text-center">
+<h2 class="text-2xl font-bold mb-1">外婆</h2>
+<p class="pinyin mb-2">wàipó</p>
+<p class="example">外婆在包饺子。</p>
+</div>
+<div class="play-button absolute top-4 right-4">
+<i class="fas fa-volume-up text-primary text-xl w-5 h-5"></i>
+</div>
+</div>
+</div>
+</div>
+<script>
+document.querySelectorAll('.word-card').forEach(card => {
+card.addEventListener('click', function() {
+const word = this.querySelector('h2').textContent;
+const example = this.querySelector('.example').textContent;
+const utterWord = new SpeechSynthesisUtterance(word);
+utterWord.lang = 'zh-CN';
+speechSynthesis.speak(utterWord);
+setTimeout(() => {
+const utterExample = new SpeechSynthesisUtterance(example);
+utterExample.lang = 'zh-CN';
+speechSynthesis.speak(utterExample);
+}, 1000);
+});
+});
+</script>
+</body>
+</html>
